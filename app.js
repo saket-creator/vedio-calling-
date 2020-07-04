@@ -28,6 +28,10 @@ function init() {
 }
 
 async function createRoom() {
+  import firebase from 'firebase';
+import 'firebase/firestore';
+
+var db = firebase.firestore();
   document.querySelector('#createBtn').disabled = true;
   document.querySelector('#joinBtn').disabled = true;
   const db = firebase.firestore();
